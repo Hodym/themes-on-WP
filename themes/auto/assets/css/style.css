@@ -1,7 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 *,
 *::after,
 *::before{
   box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.wrapper .content {
+  flex: 1 0 auto;
+}
+.wrapper .footer {
+  flex: 0 0 auto;
 }
 
 body{
@@ -37,6 +59,10 @@ a{
   background-position: top center;
   min-height: 700px;
   color: #fff;
+}
+
+.header.header-private {
+  min-height: auto;
 }
 
 .header__top{
