@@ -184,7 +184,7 @@ Template Name: home
             <li class="contacts__item">
               <p class="contacts__item-title">Телефон</p>
               <p class="contacts__item-text">
-                +38 (050) 555 66 77
+                <a href="tel:<?php the_field('phone-number'); ?>"><?php the_field('phone'); ?></a>
               </p>
             </li>
           </ul>
